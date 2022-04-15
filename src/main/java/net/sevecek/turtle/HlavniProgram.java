@@ -8,10 +8,11 @@ public class HlavniProgram {
         Turtle zofka;
 
         zofka = new Turtle();
-        zofka.setLocation(50, 350);
+        zofka.setLocation(50, 450);
 
         zofka.turnRight(90);
 
+        /*
         //Část 1
         nakresliPrasatko(zofka);
 
@@ -38,7 +39,46 @@ public class HlavniProgram {
         zofka.move(100);
         zofka.penDown();
 
+        zofkaKresliSlunicko(zofka);  */
+
+        //Část 3
+        zofka.turnLeft(90);
+        postavDomecek(zofka);
+        zofka.turnLeft(180);
+        zofka.penUp();
+        zofka.move(110);
+        zofka.turnRight(45);
+        zofka.penDown();
+
+        for (int i = 0; i < 5; i++) {
+            postavDomecek(zofka);
+            zofka.penUp();
+            zofka.turnRight(45);
+            zofka.move(80);
+            zofka.turnLeft(90);
+            zofka.move(50);
+            zofka.turnLeft(90);
+            zofka.penDown();
+        }
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(133);
+        zofka.turnLeft(90);
+        zofka.move(150);
+        zofka.turnLeft(180);
+        zofka.penDown();
+        postavDomecek(zofka);
+        zofka.penUp();
+        zofka.turnRight(135);
+        zofka.move(360);
+        zofka.turnRight(180);
+        zofka.penDown();
+        nakresliPrasatko(zofka);
+
+        zofka.setLocation(200, 55);
         zofkaKresliSlunicko(zofka);
+
+
     }
 
     private void zofkaKresliSlunicko(Turtle zofka) {
