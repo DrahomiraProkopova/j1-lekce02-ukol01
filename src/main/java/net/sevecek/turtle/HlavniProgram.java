@@ -78,7 +78,95 @@ public class HlavniProgram {
         zofka.setLocation(200, 55);
         zofkaKresliSlunicko(zofka);
 
+        //Část 4
+        zofka.setLocation(50, 600);
+        zofka.turnLeft(135);
 
+        nakresliD(zofka);
+        nakresliR(zofka);
+        nakresliA(zofka);
+        nakresliZ(zofka);
+        nakresliA(zofka);
+    }
+
+    private void nakresliZ(Turtle zofka) {
+        zofka.move(40);
+        zofka.penDown();
+        zofka.turnRight(90);
+        zofka.move(20);
+        zofka.turnRight(115);
+        zofka.move(45);
+        zofka.turnLeft(115);
+        zofka.move(20);
+        zofka.penUp();
+        zofka.move(15);
+        zofka.turnLeft(95);
+    }
+
+    private void nakresliA(Turtle zofka) {
+        zofka.penDown();
+        zofka.turnRight(25);
+        zofka.move(50);
+        zofka.turnRight(140);
+        zofka.move(50);
+        zofka.turnRight(180);
+        zofka.move(20);
+        zofka.turnLeft(75);
+        zofka.move(20);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(20);
+        zofka.turnRight(75);
+        zofka.move(20);
+        zofka.turnLeft(70);
+        zofka.move(20);
+        zofka.turnLeft(90);
+    }
+
+    private void nakresliR(Turtle zofka) {
+        zofka.penDown();
+        zofka.move(40);
+        zofka.turnRight(125);
+        for (int i = 0; i < 20; i++) {
+            zofka.move(1);
+            zofka.turnRight(1);
+        }
+        zofka.move(3);
+        zofka.turnRight(45);
+        zofka.move(3);
+        zofka.turnRight(45);
+        for (int j = 0; j < 18; j++) {
+            zofka.turnRight(1);
+            zofka.move(1);
+        }
+        zofka.turnLeft(125);
+        zofka.move(25);
+        zofka.turnLeft(45);
+        zofka.penUp();
+        zofka.move(20);
+        zofka.turnLeft(85);
+    }
+
+    private void nakresliD(Turtle zofka) {
+        zofka.penDown();
+        zofka.move(40);
+        zofka.turnRight(125);
+        for (int i = 0; i < 10; i++) {
+            zofka.move(2);
+            zofka.turnRight(2);
+        }
+        zofka.move(10);
+        zofka.turnRight(45);
+        zofka.move(10);
+        zofka.turnRight(45);
+        for (int j = 0; j < 20; j++) {
+            zofka.turnRight(1);
+            zofka.move(1);
+        }
+        zofka.penUp();
+        zofka.turnLeft(165);
+        zofka.move(40);
+        zofka.turnLeft(90);
     }
 
     private void zofkaKresliSlunicko(Turtle zofka) {
